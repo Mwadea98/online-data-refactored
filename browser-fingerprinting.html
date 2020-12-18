@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0",>
+		<title>Browser Fingerprinting</title>
+		<link rel="shortcut icon" href="assets/img/favicon.png">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap-4.1.3/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DV80NTB3Z"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-1DV80NTB3Z');
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<a class="navbar-brand" href="index.html">
+						<h3>Online Data</h3>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span> </span>
+					<span> </span>
+					<span> </span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="how-you-are-track-online.html">Your Data</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="surveillance-capitalism.html">Surveillance capitalism</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="browser-fingerprinting.html">Browser Fingerprints</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="look-alike-model.html">Look Alike</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="legal-privacy-aspects.html">Legal Aspects</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-lg-6">
+							<h5 class="title">What is browser fingerprinting?</h5>
+							<p>
+								<ul>
+									<li>A common way for websites to remember and track individual computers or devices is by loading a small packet of data onto visitors' computers. These data packets are called <strong>"cookies"</strong></li>
+									<li class="mt-2">
+										Now, websites can contain code that simply takes the fingerprint of the computer accessing them. The websites are able to identify individual computers for the same reasons fingerprints identify individual humans:
+									</li>
+									<li class="mt-2">
+										These websites are able to fingerprint computers using new coding features in HTML5, the coding language used to build websites. These fingerprints are based on the HTML "canvas" element, originally designed to create scripting-based graphics
+									</li>
+									<li class="mt-2">
+										Fingerprints are taken using a JavaScript program
+									</li>
+								</ul>
+							</p>
+						</div>
+						<div class="col-lg-6">
+							<div>
+								<img src="assets/img/browser-1.jpg" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					
+					<div class="row mt-5">
+						<div class="col-lg-6 col-md-12">
+							<h5 class="title">How does browser fingerprinting work?</h5>
+							<ul class="mt-3">
+								<li>By analyzing how your computer processes certain data in the website, like text font, images and audio, a site can gather information about your computer, such as:</li>
+								<ul>
+									<li>Operating system</li>
+									<li>Hardware configuration</li>
+									<li>Video card</li>
+									<li>Browser version</li>
+									<li>Installed Fonts</li>
+									<li>Installed plugins</li>
+									<li>But note: no personal data!</li>
+								</ul>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<div>
+								<img src="assets/img/browser-2.jpg" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					<h1 class="title mt-5">The process of browser fingerprinting</h1>
+					<div class="d-flex align-items-center justify-content-center">
+						<img src="assets/img/browser-fingerprinting-process.png" class="img-fluid">
+					</div>
+					
+					<h5>Client-side collection</h5>
+					<p>
+						The server-side information is easily collected, but our old client-side friends JavaScript and Adobe Flash® will betray much more information about your browser. A quick internet search will deliver a number of sites that show how much data your web browser will provide when asked.
+					</p>
+					<p>
+						For example, I learn from Am I Unique?(https://amiunique.org/) that my browser will provide a daunting list of information including:
+					</p>
+					<ul>
+						<li>every font available on my system</li>
+						<li>the list of plugins I have installed</li>
+						<li>the resolution of my screen</li>
+						<li>the language of my system</li>
+						<li>whether my browser accepts cookies</li>
+						<li>More</li>
+					</ul>
+					<p>
+						The table below is taken from an Am I Unique paper published in March of 2016. Note that the two richest areas of data collection are the client-side JavaScript and Adobe Flash®.
+					</p>
+					<div class="d-flex align-items-center justify-content-center mb-5">
+						<img src="assets/img/amiunique-attributes-table.jpg" class="img-fluid">
+					</div>
+					<h5 class="title">How to prevent browser fingerprinting</h5>
+					<p class="why-care">
+						Since there’s no feasible way to safely use the same browser to carry out both your private and public internet activities, the best browser fingerprinting protection right now is to separate those two profiles. Use one system or browser for your day-to-day activities and a separate one for your private activities.
+						<br>
+						<br>
+						It’s best to go one step further and use an anonymity tool such as Whonix for your private activities to ensure an even larger separation between your private and public profiles. Maintaining this separation will require good operational security.
+					</p>
+					<ul class="mb-5">
+						<li>
+							Your private internet activities should never involve using any site that you also use in your public internet life. Account correlation, such as the Facebook example, will cut right through your privacy attempts.
+						</li>
+						<li>
+							Your private activities should not include composing messages. This protects against stylometric analysis. If it’s not possible to avoid composing messages, you should seek to change your writing style significantly.
+						</li>
+						<li>
+							Use a completely different computer system that is permanently connected to an anonymity tool like Tor or a trusted VPN for your private activities. This helps prevent against inadvertent data leakage such as DNS queries or WebRTC requests.
+						</li>
+						<li>
+							If you use a VPN for both your private and public internet activities, connect to a different VPN server for each type of activity. You may also want to use a VPN with Tor, in which case there are some VPNs that work better with Tor than others.
+						</li>
+						<li>
+							Do not reuse usernames, email addresses, or any other account information from your public activities within your private activities. This protects against leaving an inadvertent trail of breadcrumbs such as the one that helped identify the owner of the illegal Silk Road marketplace.
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<h6>About</h6>
+						<p class="text-justify">
+							In this project, I have learned about how data is collected online, how it can be used and what measures we can take to remain anonymous online. I learned how companies using surveillance capitalism can use our private data. We must try to remain anonymous and used techniques to protect our data as much as possible.
+						</p>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<h6>Navigation</h6>
+						<ul class="footer-links">
+							<li>
+								<a href="how-you-are-track-online.html">Your Data</a>
+							</li>
+							<li>
+								<a href="surveillance-capitalism.html">Surveillance capitalism</a>
+							</li>
+							<li>
+								<a href="browser-fingerprinting.html">Browser Fingerprints</a>
+							</li>
+							<li>
+								<a href="look-alike-model.html">Look Alike</a>
+							</li>
+							<li>
+								<a href="legal-privacy-aspects.html">Legal Aspects</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-6 col-xs-12">
+						<p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Mwadea98.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/popper/popper.min.js"></script>
+		<script src="vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+	</body>
+</html>
